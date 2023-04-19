@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questions</title>
+</head>
+<body>
+    <div class="q-hold">
+       
+        <ul style="height: 10px; padding-left: 100px;">
+        {% for i in q%}
+         {{i.question}}
+        
+        <li><input type="checkbox">{{i.op1}}</li>
+        <li><input type="checkbox">{{i.op2}}</li>
+        <li><input type="checkbox">{{i.op3}}</li>
+        <li><input type="checkbox">{{i.op4}}</li>
+    
+
+       
+            <hr style="stroke: 5px solid black;">
+
+       
+
+        {% endfor %}
+    </ul>
+    </div>
+        
+    
+</body>
+</html>
