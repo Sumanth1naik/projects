@@ -6,12 +6,12 @@ from django.contrib.auth.models import User
 
 class UserForm(UserCreationForm):
     class Meta:
-        models=User
+        model=User
         fields=['username','password']
 
 class Question(ModelForm):
     class Meta:
-        models=questions
+        model=questions
         fields='__all__'
     
 
